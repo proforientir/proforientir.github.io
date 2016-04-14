@@ -565,7 +565,7 @@ a {
     background-color: #273a71; }
 
 .intro {
-  background: url("../../img/intro-bg-desktop1.jpg") no-repeat;
+  background: url("../img/intro-bg-desktop1.jpg") no-repeat;
   background-position: 50% 5%;
   background-size: 100%;
   min-height: 560px;
@@ -878,7 +878,7 @@ a {
     top: 35px;
     left: 25px; }
   .top-nav {
-    display: block;
+    display: none;
     position: relative; }
   .top-nav__list {
     padding: 0;
@@ -893,6 +893,8 @@ a {
     font-weight: bold;
     border-bottom: 1px solid #344b8e;
     background-color: #273a71; }
+  .top-nav-show {
+    display: block; }
   .hamburger {
     position: absolute;
     top: 18px;
@@ -915,7 +917,7 @@ a {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #81b3d2;
+    background-color: white;
     transition: background 0 0.3s; }
   .hamburger--box::before,
   .hamburger--box::after {
@@ -925,7 +927,7 @@ a {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #81b3d2;
+    background-color: white;
     content: '';
     transition-duration: 0.3s, 0.3s;
     transition-delay: 0.3s, 0; }
@@ -938,7 +940,7 @@ a {
   .hamburger:focus {
     outline: none; }
   .hamburger.active .hamburger--box {
-    background-color: #81b3d2; }
+    background-color: transparent; }
   .hamburger.active .hamburger--box::before {
     top: 0;
     transform: rotate(45deg);
