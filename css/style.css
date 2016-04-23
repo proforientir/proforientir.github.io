@@ -439,6 +439,20 @@ a {
   align-items: center;
   padding-bottom: 30px; }
 
+.review-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+  min-height: 270px;
+  border-bottom: 2px solid #c8d9e5;
+  margin-bottom: 20px; }
+
+.review-wrapper:last-child {
+  border-bottom: none;
+  margin-bottom: 0; }
+
 /* Modules - elements used many times */
 .btn {
   display: block;
@@ -743,6 +757,41 @@ a {
 .span-fix {
   display: block; }
 
+.review {
+  width: 70%;
+  position: relative;
+  padding: 20px 0 35px 0; }
+  .review::before, .review::after {
+    display: block;
+    font-size: 88px;
+    position: absolute;
+    color: #17c2a4; }
+  .review::before {
+    content: "\201c";
+    top: -20px;
+    left: 0; }
+  .review::after {
+    content: "\201d";
+    bottom: -50px;
+    left: 0;
+    padding-bottom: 0; }
+  .review__img {
+    border-radius: 50%;
+    align-self: center; }
+  .review__text {
+    font-size: 16px;
+    font-style: italic; }
+    .review__text--name {
+      font-size: 16px;
+      color: #273a71;
+      font-weight: 700;
+      font-style: italic;
+      margin-bottom: 5px; }
+    .review__text--job {
+      color: #888b90;
+      font-style: italic;
+      margin-top: 0px; }
+
 .credits {
   display: none;
   margin: 0 auto;
@@ -770,22 +819,21 @@ a {
     top: 50%;
     right: 10px; }
   .top-nav {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding: 0; }
   .top-nav__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
-    font-size: 0px;
     margin: 0 auto;
     padding: 0;
     list-style: none; }
   .top-nav__item {
     padding: 0;
     width: 15%;
-    font-size: 14px;
+    font-size: 11px;
     text-transform: uppercase;
     line-height: 50px;
     text-align: center;
@@ -843,15 +891,16 @@ a {
   .inshort-text-wrapper {
     width: 75%; }
   .page-section__title {
-    width: 22.3%;
+    width: 25%;
     font-size: 30px; }
   .arrow-top {
     top: 50%;
     right: 80px; }
   .top-nav {
-    width: 90%; }
+    width: 100%; }
   .top-nav__item {
-    font-size: 16px; }
+    font-size: 16px;
+    width: 13%; }
   .intro__title {
     width: 1200px; } }
 
